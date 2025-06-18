@@ -21,3 +21,7 @@ test('average function cases', () => {
   expect(average([])).toBeNull();
   // expect(average([1, 'a', 3])).toBeNull();
 });
+
+test('average returns null if array contains null values', () => {
+  expect(average([2, null, 4])).toBeNull();
+});
